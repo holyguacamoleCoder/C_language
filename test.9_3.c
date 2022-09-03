@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-//Óï¾ä2£ºSwitch³õÊ¶
+//Switchåˆè¯†
 int main()
 {
 	int day = 0;
