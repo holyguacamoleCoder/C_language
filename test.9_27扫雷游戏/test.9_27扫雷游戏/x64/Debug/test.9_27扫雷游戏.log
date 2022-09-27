@@ -1,0 +1,4 @@
+﻿  扫雷game.c
+  扫雷test.cpp
+F:\c-works\test.9_27扫雷游戏\test.9_27扫雷游戏\扫雷test.cpp(1,1): warning C4828: 文件包含在偏移 0x48b 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  test.9_27扫雷游戏.vcxproj -> F:\c-works\test.9_27扫雷游戏\x64\Debug\test.9_27扫雷游戏.exe
