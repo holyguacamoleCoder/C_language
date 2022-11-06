@@ -1,0 +1,29 @@
+# Project: 183.迭代法求根
+# Makefile created by Dev-C++ 6.7.5
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = 迭代法求根0.o
+LINKOBJ  = 迭代法求根0.o
+LIBS     = -L"g:/xdoj/新建文件夹" -L"G:/XDOJ/新建文件夹 (3)/Dev-Cpp/MinGW32/lib" -L"G:/XDOJ/新建文件夹 (3)/Dev-Cpp/MinGW32/mingw32/lib" -g3 -static
+INCS     = -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/include" -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+CXXINCS  = -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++" -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/mingw32" -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/backward" -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/include" -I"g:/xdoj/新建文件夹 (3)/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+BIN      = 183.迭代法求根.exe
+CXXFLAGS = $(CXXINCS) -Wall -Wextra -g3
+ENCODINGS = -finput-charset=utf-8 -fexec-charset=gbk
+CFLAGS   = $(INCS) -Wall -Wextra -g3
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "$(BIN)" $(LIBS)
+
+迭代法求根0.o: 迭代法求根0.c
+	$(CC) -c 迭代法求根0.c -o 迭代法求根0.o $(CFLAGS) 
