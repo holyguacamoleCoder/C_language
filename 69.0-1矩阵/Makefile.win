@@ -1,0 +1,32 @@
+# Project: 69.0-1æÿ’Û
+# Makefile created by Dev-C++ 6.7.5
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = 0-1æÿ’Û0.o 0-1æÿ’Û1.o
+LINKOBJ  = 0-1æÿ’Û0.o 0-1æÿ’Û1.o
+LIBS     = -L"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/" -L"g:/devc/dev-cpp/mingw32/lib/gcc/" -L"g:/devc/dev-cpp/mingw32/mingw32/lib/" -L"g:/devc/dev-cpp/mingw32/lib/" -L"G:/devc/Dev-Cpp/MinGW32/lib" -L"G:/devc/Dev-Cpp/MinGW32/mingw32/lib" -g3 -static
+INCS     = -I"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"g:/devc/dev-cpp/mingw32/include" -I"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+CXXINCS  = -I"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++" -I"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/mingw32" -I"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/backward" -I"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"g:/devc/dev-cpp/mingw32/include" -I"g:/devc/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+BIN      = 69.0-1æÿ’Û.exe
+CXXFLAGS = $(CXXINCS) -Wall -Wextra -g3
+ENCODINGS = -finput-charset=utf-8 -fexec-charset=gbk
+CFLAGS   = $(INCS) -Wall -Wextra -g3
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "$(BIN)" $(LIBS)
+
+0-1æÿ’Û0.o: 0-1æÿ’Û0.c
+	$(CC) -c 0-1æÿ’Û0.c -o 0-1æÿ’Û0.o $(CFLAGS) 
+
+0-1æÿ’Û1.o: 0-1æÿ’Û1.c
+	$(CC) -c 0-1æÿ’Û1.c -o 0-1æÿ’Û1.o $(CFLAGS) 
