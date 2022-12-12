@@ -1,6 +1,6 @@
 [Project]
-FileName=73.×Ö·û´®Ñ¹Ëõ.dev
-Name=73.×Ö·û´®Ñ¹Ëõ
+FileName=67.²éÕÒ.dev
+Name=67.²éÕÒ
 UnitCount=1
 Type=1
 Ver=2
@@ -37,7 +37,7 @@ AddCharset=1
 UseUTF8=0
 
 [Unit1]
-FileName=×Ö·û´®Ñ¹Ëõ0.c
+FileName=²éÕÒ0.c
 Folder=
 Compile=1
 Link=1
